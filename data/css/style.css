@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header{
+    height: 100vh;
+    background-color: #222222;
+}
+
+.hero {
+    position: relative;
+    background: url('../img/hero.png') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.next-button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #79797996;
+    padding: 10px 20px;
+    border-radius:15px;
+    color: #000;
+    z-index: 999;
+}
+
+.next-button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.next-button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MAIN */
+main {
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.islamic-opening {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.salam {
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.quran-verse {
+    font-style: italic;
+    font-family: 'serif';
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    color: #666;
+    position: relative;
+    padding: 20px;
+}
+
+.quran-verse span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #d4af37;
+}
+
+.invitation-text {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.count-down-date {
+    display: flex;
+    justify-content: center;
+}
+
+.count-down {
+    display: flex;
+    gap: 20px;
+}
+
+.count-down-item {
+    background: #fff;
+    border: 1px solid #d4af37;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.count-down-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    display: block;
+}
+
+.count-down-text {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin: 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+.couple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mempelai {
+    flex: 1;
+}
+
+.mempelai p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.mempelai h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #d4af37;
+}
+
+.and {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #777;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.event-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.event-card h3 {
+    margin-bottom: 15px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.maps {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.maps h3 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .content h3 {
+        font-size: 1.2rem;
+    }
+
+    /* MAIN */
+    .couple {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero{
+        height:80vh;
+    }
+
+    .content{
+        padding-top: 20%;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .content h3 {
+        font-size: 1rem;
+    }
+
+    /* MAIN */
+    .quran-verse {
+        font-size: 0.9rem;
+    }
+    
+    .count-down {
+        gap: 10px;
+    }
+    
+    .count-down-item {
+        width: 65px;
+        height: 65px;
+    }
+
+    .count-down-number {
+        font-size: 1.2rem;
+    }
+
+    .mempelai p{
+        font-size: 0.9rem;
+    }
+}
+
+/* LOADING SCREEN */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInName 1.5s ease forwards;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 2px;
+    background: #eeeeee;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #d4af37;
+    animation: fillProgress 2s ease-in-out forwards;
+}
+
+@keyframes fadeInName {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fillProgress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
