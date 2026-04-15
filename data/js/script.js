@@ -43,3 +43,23 @@ const x = setInterval(function() {
         document.querySelector(".count-down").innerHTML = "ACARA SUDAH DIMULAI";
     }
 }, 1000);
+
+// Reveal JS
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active'); 
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+const elements = document.querySelectorAll('.reveal');
+elements.forEach((el) => observer.observe(el));
