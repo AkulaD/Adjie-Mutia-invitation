@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="data/css/style.css">
+    <link rel="stylesheet" href="data/css/style.css?v=1.1">
     <script src="data/js/script.js" defer></script>
 </head>
-<body>
+<body class="scroll-off">
     <div id="loader">
         <div class="loader-content">
             <h1 class="loader-name">Adjie & Mutia</h1>
@@ -32,12 +32,34 @@
             <div class="content">
                 <h3>The Wedding of</h3>
                 <h1>Adjie & Mutia</h1>
-                <p>Save the Date | 12.12.2026</p>
-            </div>
+                <div class="profile-icon">
+                    <img src="data/img/profile.jpg" alt="profile">
+                </div>
+                <h4>Save the Date | 04.July.2026</h4>
 
+                <div class="count-down-date">
+                    <div class="count-down">
+                        <div class="count-down-item">
+                            <span class="count-down-number" id="days"></span>
+                            <p class="count-down-text">Days</p>
+                        </div>
+                        <div class="count-down-item">
+                            <span class="count-down-number" id="hours"></span>
+                            <p class="count-down-text">Hours</p>
+                        </div>
+                        <div class="count-down-item">
+                            <span class="count-down-number" id="minutes"></span>
+                            <p class="count-down-text">Minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <div class="next-button">
-            <a href="#details">See Details</a>
+            <a href="#details" id="open-invitation">
+                <img src="data/img/mail.png" alt="Undangan">Buka Undangan
+            </a>
         </div>
     </header>
 
@@ -56,22 +78,7 @@
                 </p>
             </div>
             
-            <div class="count-down-date">
-                <div class="count-down">
-                    <div class="count-down-item">
-                        <span class="count-down-number" id="days"></span>
-                        <p class="count-down-text">Days</p>
-                    </div>
-                    <div class="count-down-item">
-                        <span class="count-down-number" id="hours"></span>
-                        <p class="count-down-text">Hours</p>
-                    </div>
-                    <div class="count-down-item">
-                        <span class="count-down-number" id="minutes"></span>
-                        <p class="count-down-text">Minutes</p>
-                    </div>
-                </div>
-            </div>
+
         </section>
 
         <section class="profile">
@@ -93,13 +100,13 @@
         <section class="events">
             <div class="event-card">
                 <h3>Akad Nikah</h3>
-                <p>Sabtu, 12 Desember 2026</p>
+                <p>Sabtu, 4 Juli 2026</p>
                 <p>08.00 - 10.00 WIB</p>
                 <p>Masjid Agung Kota</p>
             </div>
             <div class="event-card">
                 <h3>Resepsi</h3>
-                <p>Sabtu, 12 Desember 2026</p>
+                <p>Sabtu, 4 Juli 2026</p>
                 <p>11.00 - Selesai</p>
                 <p>Gedung Serbaguna</p>
             </div>
