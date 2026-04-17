@@ -3,6 +3,9 @@ const openBtn = document.getElementById('open-invitation');
 const body = document.body;
 const navMap = document.querySelector('.navmap-container');
 const mainContent = document.querySelector('main');
+const music = document.getElementById('bg-music');
+const musicToggle = document.getElementById('music-toggle');
+const volumeIcon = document.getElementById('volume-icon');
 
 // 1. Loading Screen logic
 window.addEventListener("load", function() {
@@ -137,3 +140,41 @@ window.onload = function() {
         window.scrollTo(0, 0);
     }, 10);
 };
+
+// 7. Musik Logic (Mainkan saat buka undangan)
+if (openBtn) {
+    openBtn.addEventListener('click', function() {
+        if (music) {
+            music.play();
+        }
+    });
+}
+
+// 8. Toggle Mute Logic
+if (musicToggle) {
+    musicToggle.addEventListener('click', function() {
+        if (music.muted) {
+            music.muted = false;
+            volumeIcon.src = "data/img/volume.png";
+        } else {
+            music.muted = true;
+            volumeIcon.src = "data/img/volume-mute.png";
+        }
+    });
+}
+
+// 9. Typewriter Logic
+const typewriterOptions = {
+    threshold: 0.2
+};
+
+const typewriterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            typewriterObserver.unobserve(entry.target);
+        }
+    });
+}, typewriterOptions);
+
+document.querySelectorAll('.typewriter-text').forEach(el => typewriterObserver.observe(el));

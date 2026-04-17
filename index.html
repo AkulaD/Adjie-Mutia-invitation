@@ -6,6 +6,9 @@
     <title>Undangan Pernikahan - Adjie & Mutia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="data/css/style.css?v=1.1">
     <script src="data/js/script.js" defer></script>
@@ -21,6 +24,13 @@
     </div>
 
     <section class="navmap-container">
+        <div class="map-content" id="music-toggle">
+            <img src="data/img/volume.png" alt="music-volume" id="volume-icon">
+            <audio id="bg-music" loop>
+                <source src="data/music/Shania Twain - From This Moment On.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        
         <div class="map-content">
             <a href="#maps"><img src="data/img/map.png" alt="map-acara"></a>
         </div>
@@ -31,7 +41,7 @@
             <div class="overlay"></div>
             <div class="content">
                 <h3>The Wedding of</h3>
-                <h1>Adjie & Mutia</h1>
+                <h1>Adjie <span>&</span>Mutia</h1>
                 <div class="profile-icon">
                     <img src="data/img/profile.jpg" alt="profile">
                 </div>
@@ -58,7 +68,8 @@
 
         <div class="next-button">
             <a href="#details" id="open-invitation">
-                <img src="data/img/mail.png" alt="Undangan">Buka Undangan
+                <img src="data/img/mail.png" alt="Undangan">
+                <p>Buka Undangan</p>
             </a>
         </div>
     </header>
@@ -86,29 +97,57 @@
                 <div class="couple">
                     <div class="mempelai">
                         <h2>Adjie</h2>
-                        <p>Putra dari Bapak Nama Ayah & Ibu Nama Ibu</p>
+                        <p class="typewriter-text">Setiadjie Bhaskara, Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nisi.</p>
                     </div>
                     <span class="and">&</span>
                     <div class="mempelai">
                         <h2>Mutia</h2>
-                        <p>Putri dari Bapak Nama Ayah & Ibu Nama Ibu</p>
+                        <p class="typewriter-text">Mutia Shalsabila, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, ab?</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <h1 class="event-header">ACARA</h1>
         <section class="events">
-            <div class="event-card">
+            <div class="event-card reveal">
                 <h3>Akad Nikah</h3>
-                <p>Sabtu, 4 Juli 2026</p>
-                <p>08.00 - 10.00 WIB</p>
-                <p>Masjid Agung Kota</p>
+                <div class="event-line"></div>
+                <div class="event-content">
+                    <div class="event-date">
+                        <p>Sabtu, 4 Juli 2026</p>
+                        <p>08.00 - 10.00 WIB</p>
+                    </div>
+                    <div class="event-location">
+                        <p>Masjid Agung Kota</p>
+                    </div>
+                    <div class="add-calendar">
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah+Adjie+Mutia&dates=20260704T010000Z/20260704T030000Z&details=Mohon+doa+restu+pada+pernikahan+kami." target="_blank">
+                            <img src="data/img/calendar.png" alt="Calendar">
+                            <p>Add To Calendar</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card reveal">
                 <h3>Resepsi</h3>
-                <p>Sabtu, 4 Juli 2026</p>
-                <p>11.00 - Selesai</p>
-                <p>Gedung Serbaguna</p>
+                <div class="event-line"></div>
+                <div class="event-content">
+                    <div class="event-date">
+                        <p>Sabtu, 4 Juli 2026</p>
+                        <p>11.00 - Selesai</p>
+                    </div>
+                    <div class="event-location">
+                    <p>Gedung Serbaguna</p>
+                    </div>
+                    <div class="add-calendar">
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah+Adjie+Mutia&dates=20260704T010000Z/20260704T030000Z&details=Mohon+doa+restu+pada+pernikahan+kami." target="_blank">
+                            <img src="data/img/calendar.png" alt="Calendar">
+                            <p>Add To Calendar</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
