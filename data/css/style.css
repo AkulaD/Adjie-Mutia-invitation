@@ -271,6 +271,43 @@ main {
     font-size: 0.95rem;
 }
 
+/* gallery container */
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.gallery-track {
+    display: flex;
+    width: calc(250px * 8);
+    animation: scroll 30s linear infinite;
+}
+
+.gallery-track img {
+    width: 20vw;
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 4));
+    }
+}
+
+.gallery-track:hover {
+    animation-play-state: paused;
+}
+
 /* Profile */
 .profile {
     text-align: center;
@@ -422,8 +459,99 @@ main {
     font-size: 0.7rem;
 }
 
+/* Story h1 */
+.story-h1{
+    font-size:1.3rem;
+    text-transform: uppercase;
+    color: #4797ff;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.story-card{
+    position: relative;
+    padding: 1.6rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.story-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:0.8rem;
+    width: 100%;
+    background-color: #4797ff;
+    border-radius: 15px 15px 0 0;
+}
+
+.story-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.story-left h2{
+    font-size: 1.2rem;
+}
+
+.story-date p{
+    font-size: 0.8rem;
+    color: #222222;
+    border-bottom: 1px solid #22222238;
+    padding: 0.3rem 0;
+    font-weight: bold;
+}
+
+.story-right img {
+    width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+    margin-top: -6rem;
+    border: 4px solid #fff;
+}
+
+.story-desc p{
+    font-size:1rem;
+    padding-top: 0.3rem;
+    text-align: justify;
+    line-height: 1;
+    color: #222222;
+}
+
+.story-line-card{
+    content: '';
+    position: block;
+    bottom: 0;
+    left: 0;
+    margin-left:1rem;
+    width: 0.4rem;
+    height: 2rem;
+    background-color:#4797ff;
+}
+
+.story-line-card-after{
+    content: '';
+    position: block;
+    bottom: 0;
+    left: 0;
+    margin-left:1rem;
+    width: 0.4rem;
+    height: 5rem;
+    background-color:#4797ff;
+}
+
+
 /* Main maps */
 .maps {
+    background-color: #fff;
     padding: 40px 20px;
     text-align: center;
 }
@@ -442,6 +570,95 @@ main {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Closing */
+.closing h3{
+    font-size: 1.2rem;
+    text-transform:uppercase;
+    color: #4797ff;
+    text-align: center;
+}
+
+.closing-content{
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.line{
+    content: '';
+    position: block;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 1px;
+    margin: 0.5rem auto;
+    background-color: #22222238;
+}
+
+.closing-content p:first-child{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+}
+
+.closing-content p:last-child{
+    text-align: justify;
+    padding-top: 0.5rem;
+}
+
+/* footer */
+footer{
+    background-color: #222222;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p{
+    font-size: 0.8rem;
+}
+
+.footer-content span{
+    color: #4797ff;
+    font-weight: bold;
+}
+
+.footer-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.footer-email p{
+    font-size: 0.5rem;
+}
+
+.footer-email a{
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-email a:hover{
+    opacity: 0.8;
+    color: #4797ff;
+}
+
+@media (min-width: 768px){
+    /* footer */
+    .footer-content p{
+        font-size: 1rem;
+    }
+
+    .footer-email p, .footer-email a{
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 768px) {
