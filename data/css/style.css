@@ -603,8 +603,8 @@ main {
 }
 
 .closing-content p:last-child{
-    text-align: justify;
     padding-top: 0.5rem;
+    text-align: start;
 }
 
 /* footer */
@@ -753,6 +753,46 @@ footer{
     .and {
         font-size: 2rem;
         margin: 10px 0;
+    }
+
+    /* story */
+    .story-h1{
+        font-size:1.1rem;
+    }
+
+    .story-card{
+        padding: 1rem;
+    }
+
+    .story-left h2{
+        font-size: 1.1rem;
+    }
+
+    .story-date p{
+        font-size: 0.7rem;
+    }
+
+    .story-right img {
+        width: 140px;
+        height: 170px;
+    }
+
+    .story-desc p{
+        font-size:0.8rem;
+        padding-top: 0.3rem;
+    }
+
+    .story-line-card-after{
+        height: 6rem;
+    }
+
+    /* closing */
+    .closing h3{
+        font-size: 1rem;
+    }
+
+    .closing-content{
+        font-size: 0.7rem;
     }
 }
 
