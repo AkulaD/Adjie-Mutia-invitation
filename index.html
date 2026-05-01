@@ -10,7 +10,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="data/css/style.css?v=1.1">
+    <link rel="stylesheet" href="data/css/style.css?v=1.2">
     <script src="data/js/script.js" defer></script>
 </head>
 <body class="scroll-off">
@@ -75,17 +75,23 @@
     </header>
 
     <main>
-        <section id="details" class="islamic-opening">
-            <div class="container reveal">
-                <p class="salam">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
-                
-                <blockquote class="quran-verse reveal">
-                    "Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+        <section id="details" class="quran-opening">
+            <div class="quran-verse">
+                <div class="quran-verse-content reveal">
+                    <img src="data/img/inisial.png" alt="inisial">
+                    <p>"Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
                     <span>(QS. Ar-Rum: 21)</span>
-                </blockquote>
+                </div> 
+            </div>
+        </section>
+
+        <section class="islamic-opening">
+            <div class="container reveal">
+
+                <p class="salam">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
 
                 <p class="invitation-text reveal">
-                    Atas izin dan rahmat Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami:
+                    Atas izin dan rahmat Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami.
                 </p>
 
                 <section class="gallery-container reveal">
@@ -102,10 +108,7 @@
                     </div>
                 </section>
             </div>
-
         </section>
-
-
 
         <section class="profile">
             <div class="container">
@@ -220,13 +223,63 @@
             </div>
         </section>
 
+        <section class="send-gift">
+            <div class="container">
+                <h3>Kirim Hadiah</h3>
+                <div class="gift-content">
+                    <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi gift</p>
+                    <button class="gift-button" id="gift-button" type="submit">
+                        <img src="data/img/gift.png" alt="gift">
+                        <p>Kirim Gift</p>
+                    </button>
+                </div>
+
+                <!-- gift-card -->
+                <div class="gift-card-container hidden" id="gift-card-container">
+                    <div class="gift-card">
+                        <div class="paspor-text">Paspor</div>
+                        
+                        <div class="bca-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA">
+                        </div>
+
+                        <div class="chip">
+                            <div class="chip-line"></div>
+                            <div class="chip-line"></div>
+                            <div class="chip-line"></div>
+                            <div class="chip-line"></div>
+                        </div>
+
+                        <div class="debit-text">debit</div>
+
+                        <div class="card-number" id="acc-number">1234 5678 9012 3456</div>
+
+                        <div class="card-holder">SETIADJIE BHASKARA</div>
+                        
+                        <div class="mastercard-logo">
+                            <div class="circles">
+                                <div class="circle red"></div>
+                                <div class="circle yellow"></div>
+                            </div>
+                            <span>mastercard</span>
+                        </div>
+                    </div>
+
+                    <button class="copy-button" id="copy-button">Copy-No.Rek</button>
+                </div>
+            </div>
+        </section>
+
         <section class="closing reveal">
             <div class="container">
-                <h3>Diharapkan kedatangannya</h3>
+                <h3>Terimakasih</h3>
                 <div class="line"></div>
                 <div class="closing-content">
-                    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restunya, kami ucapkan terima kasih.</p>
-                    <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+                    <div class="closing-img">
+                        <img src="data/img/closing.jpg" alt="closing">
+                    </div>
+                    <h4>Adjie & Mutia</h4>
+                    <p>Sabtu, 4 Juli 2026</p>
                 </div>
             </div>
         </section>
@@ -235,10 +288,18 @@
     <footer>
         <div class="footer-container">
             <div class="footer-content">
-                <p>Created by <span>Shaka Banuasta</span></p>
-                <div class="footer-email">
-                    <p>Email :</p><a href="mailto:ajishaka402@gmail.com" target="_blank">ajishaka402@gmail.com</a>
+                <p>Shaka</p>
+                <div class="footer-contact">
+                    <a href="https://www.instagram.com/sh4k41/" target="_blank"><img src="data/img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/shaka-banuasta-798129309/" target="_blank"><img src="data/img/linkedin.png" alt="linkedin"></a>
+                    <a href="https://github.com/AkulaD" target="_blank"><img src="data/img/github.png" alt="github"></a>
+                    <a href="mailto:ajishaka402@gmail.com" target="_blank"><img src="data/img/email.png" alt="email"></a>
                 </div>
+                <hr>
+                <div class="portofolio">
+                    <a href="https://shaka-banuasta.my.id/" target="_blank">shaka-banuasta.my.id</a>
+                </div>
+                <p>&copy; 2026 Shaka Banuasta. All rights reserved.</p>
             </div>
         </div>
     </footer>

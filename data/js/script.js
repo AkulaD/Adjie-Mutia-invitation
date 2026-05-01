@@ -1,4 +1,4 @@
-// Definisi variabel global
+// variabel global
 const openBtn = document.getElementById('open-invitation');
 const body = document.body;
 const navMap = document.querySelector('.navmap-container');
@@ -6,6 +6,10 @@ const mainContent = document.querySelector('main');
 const music = document.getElementById('bg-music');
 const musicToggle = document.getElementById('music-toggle');
 const volumeIcon = document.getElementById('volume-icon');
+const giftBtnTrigger = document.getElementById('gift-button');
+const giftCardDisplay = document.getElementById('gift-card-container');
+const giftCardCopyBtn = document.getElementById('copy-button');
+const bankAccountNumber = document.getElementById('acc-number');
 
 // 1. Loading Screen logic
 window.addEventListener("load", function() {
@@ -178,3 +182,23 @@ const typewriterObserver = new IntersectionObserver((entries) => {
 }, typewriterOptions);
 
 document.querySelectorAll('.typewriter-text').forEach(el => typewriterObserver.observe(el));
+
+// 10. Gift Card Interaction Logic
+if (giftBtnTrigger && giftCardDisplay) {
+    giftBtnTrigger.addEventListener('click', function() {
+        giftCardDisplay.classList.toggle('hidden');
+    });
+}
+
+// 11. Clipboard Copy Logic
+if (giftCardCopyBtn && bankAccountNumber) {
+    giftCardCopyBtn.addEventListener('click', function() {
+        const textToCopy = bankAccountNumber.innerText.replace(/\s/g, '');
+        
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert("Nomor rekening berhasil dicopy: " + textToCopy);
+        }).catch(err => {
+            console.error('Gagal copy teks: ', err);
+        });
+    });
+}

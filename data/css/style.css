@@ -218,6 +218,44 @@ main {
     margin: 0 auto;
 }
 
+.quran-opening {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #4797ff;
+    color: #333;
+}
+
+.quran-verse{
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quran-verse-content {
+    font-style: italic;
+    font-family: 'serif';
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;
+    color: #666;
+    padding: 20px;
+}
+
+.quran-verse-content img{
+    width: 40%;
+    display: block;
+    padding:20px;
+}
+
+.quran-verse-content span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #4797ff;
+}
+
 .islamic-opening {
     text-align: center;
     padding: 60px 20px;
@@ -229,26 +267,6 @@ main {
     font-weight: 600;
     margin-bottom: 20px;
     letter-spacing: 1px;
-}
-
-.quran-verse {
-    font-style: italic;
-    font-family: 'serif';
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    line-height: 1.8;
-    color: #666;
-    position: relative;
-    padding: 20px;
-}
-
-.quran-verse span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 0.85rem;
-    color: #4797ff;
 }
 
 .reveal {
@@ -572,6 +590,63 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Gift Content */
+.send-gift{
+    background-color:#4797ff;
+    padding: 40px 20px;
+}
+
+.send-gift h3{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gift-content p{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.gift-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gift-button img{
+    width: 1.5rem;
+    height: auto;
+}
+
+.gift-button p{
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.gift-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Closing */
 .closing h3{
     font-size: 1.2rem;
@@ -586,6 +661,25 @@ main {
     padding: 1rem 0;
 }
 
+.closing-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closing-img img{
+    width: 30%;
+    height:auto;
+    border-radius:10px;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.closing-img img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 .line{
     content: '';
     position: block;
@@ -597,68 +691,79 @@ main {
     background-color: #22222238;
 }
 
-.closing-content p:first-child{
-    text-align: justify;
-    padding-bottom: 0.5rem;
+.closing-content h4{
+    text-align: center;
+    font-weight: bold;
+    padding-top:1.2rem;
+    font-size:2.5rem;
+    font-family: 'Great Vibes', cursive;
 }
 
-.closing-content p:last-child{
-    padding-top: 0.5rem;
-    text-align: start;
+.closing-content p{
+    text-align: center;
+    font-weight: bold;
+    padding-top:1rem;
+    font-size:1.2rem;
 }
 
 /* footer */
 footer{
     background-color: #222222;
-    padding: 1.2rem;
-    text-align: center;
-}
-
-.footer-content{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-content p{
-    font-size: 0.8rem;
-}
-
-.footer-content span{
-    color: #4797ff;
-    font-weight: bold;
-}
-
-.footer-email{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2rem;
-}
-
-.footer-email p{
-    font-size: 0.5rem;
-}
-
-.footer-email a{
-    font-size: 0.5rem;
-    text-decoration: none;
+    padding: 1rem;
     color: #fff;
 }
 
-.footer-email a:hover{
-    opacity: 0.8;
-    color: #4797ff;
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-@media (min-width: 768px){
-    /* footer */
-    .footer-content p{
-        font-size: 1rem;
-    }
+.foooter-content{
+    width: 100%;
+    gap: 1rem;
+}
 
-    .footer-email p, .footer-email a{
-        font-size: 0.8rem;
-    }
+.footer-content p:first-child{
+    font-size: 2.4rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+
+.footer-content p:last-child{
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    color: #b1b1b1;
+}
+
+.footer-contact{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap: 1rem;
+    text-align: center;
+    padding:3rem 0 1rem 0;
+}
+
+.footer-contact img{
+    width: 3.5rem;
+    height: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;    
+}
+
+.portofolio{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.portofolio a{
+    color: #4797ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -675,6 +780,20 @@ footer{
         flex-direction: row;
         justify-content: center;
         gap: 50px;
+    }
+
+    /* Footer */
+    .footer-content p:first-child{
+        font-size: 2rem;
+    }
+
+    .footer-contact{
+        padding:2rem 0 1rem 0;
+    }
+
+    .footer-container img{
+        width: 2.5rem;
+        height: auto;
     }
 }
 
@@ -788,11 +907,19 @@ footer{
 
     /* closing */
     .closing h3{
+        font-size: 1.2rem;
+    }
+
+    .closing-content h4{
+        font-size: 1.8rem;
+    }
+
+    .closing-content p{
         font-size: 1rem;
     }
 
-    .closing-content{
-        font-size: 0.7rem;
+    .closing-img img{
+        width: 40%;
     }
 }
 
@@ -911,4 +1038,143 @@ footer{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* KARTU BCA */
+.hidden {
+    display: none !important;
+}
+
+.gift-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 4rem;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gift-card-container:not(.hidden) {
+    display: flex !important;
+    opacity: 1;
+}
+
+.gift-card {
+    width: 100%;
+    max-width: 400px;
+    min-height: 220px; 
+    aspect-ratio: 1.58 / 1;
+    background: linear-gradient(135deg, #a5d1e9 0%, #76afd3 40%, #5b99c2 100%);
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gift-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 40%);
+    pointer-events: none;
+    border-radius: 15px;
+}
+
+.bca-logo {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.bca-logo img {
+    width: clamp(45px, 12vw, 65px);
+    filter: brightness(0) invert(1);
+}
+
+.chip {
+    width: 13%;
+    aspect-ratio: 1.3 / 1;
+    background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.chip-line {
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.card-number {
+    font-size: clamp(1rem, 5.2vw, 1.5rem);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    word-break: break-all;
+    line-height: 1.2;
+}
+
+.card-holder {
+    font-size: clamp(0.7rem, 4vw, 1rem);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.mastercard-logo {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.red { background: #eb001b; margin-right: -8px; }
+.yellow { background: #f79e1b; opacity: 0.8; }
+
+.mastercard-logo span {
+    font-size: 7px;
+    display: block;
+    font-weight: bold;
+}
+
+.copy-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
 }
